@@ -1,7 +1,6 @@
 package org.example;
 import java.util.*;
-import java.util.*;//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
+
 public class Main {
     public static void main(String[] args) {
         Scanner s = new Scanner(System.in);
@@ -9,10 +8,8 @@ public class Main {
         System.out.print("Input temperature in celcius: ");
         double cel = s.nextDouble();
 
-        double fahr = cel * (9/5) + 32;
+        double fahr = cel * 1.8 + 32;
 
-        System.out.println("Temperature in Fahrenheit: " + fahr);
-
-
+        System.out.printf("Temperature in Fahrenheit: %.2f%n", fahr);
     }
 }
